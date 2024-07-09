@@ -79,7 +79,7 @@ header {
 
 nav a:hover {
 
-  background-color: #BFACB5;
+  background-color: #0F084B;
 
   color: rgb(251, 251, 252);
 
@@ -87,7 +87,7 @@ nav a:hover {
 
 nav a {
 
-  color: gold;
+  color: #5BC0EB;
 
   text-decoration: none;
 
@@ -99,7 +99,7 @@ nav a {
 
 .book, .join {
 
-  background-color: #ECBDBF ;
+  background-color: #26408B ;
 
   color: white;
 
@@ -120,7 +120,7 @@ nav a {
 
 .book:hover, .join:hover {
 
-  background-color: #5BC0EB;
+  background-color: white;
 
   color: black;
 
@@ -142,7 +142,7 @@ nav a {
 
 .msg {
 
-  background-color: #6f7364;
+  background-color: #BFACB5;
 
   padding: 35px;
 
@@ -156,7 +156,7 @@ nav a {
 
 footer {
 
-  background-color: #465362;
+  background-color: #BFACB5;
 
   padding: 25px 50px;
 
@@ -191,7 +191,7 @@ footer {
 
 .msg h2, p {
 
-  color: black;
+  color: #0F084B;
 
 }
 
@@ -203,7 +203,7 @@ footer h3{
 
 footer a {
 
-  color: gold;
+  color: black;
 
   text-decoration: none
 
@@ -289,17 +289,17 @@ footer .social img   {
 
 
 
-.rivers-card, .camping-card, .rapids-card {
+.silent-card, .ambiance-card, .rapids-card {
 
   margin: 200px 0;
 
 }  
 
-.rivers-card, .camping-card, .rapids-card { 
+.silent-card, .ambiance-card, .rapids-card { 
 
   margin: 50px auto;
 
-  width: 60%;
+  width: 200%;
 
 }
 
@@ -373,11 +373,10 @@ nav {
 
 
 .home-grid {
-
-  display: grid;
-
-  grid-template-columns: repeat(10, 1fr);
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Modified to 3 columns */
+    gap: 20px;
+    padding: 20px;
 }
 
 
@@ -392,9 +391,9 @@ nav {
 
 
 
-.rivers-card {
+.silent-card {
 
-  grid-column: 2/4;
+  grid-column: 3;
 
   grid-row: 2/3;
 
@@ -403,12 +402,9 @@ nav {
 
 
 
-.camping-card {
-
-  grid-column: 5/7;
-
-  grid-row: 2/3;
-
+.ambiance-card {
+    grid-column: 3;
+    grid-row: 3/3;
 }
 
 
@@ -436,7 +432,7 @@ nav {
 
 
 
-.mountains {
+.library {
 
   width: 100%;
 
@@ -513,6 +509,35 @@ nav {
   margin: 0;
   box-sizing: border-box;
   border-top: 1px solid #ccc;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.silent-card, .ambiance-card {
+    display: flex;
+    align-items: center;
+    margin-right: 20px
+}
+
+.card-img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px
+}
+
+/* Ensuring the ambiance-card is aligned to the right */
+.ambiance-card {
+    grid-column: 3 / 4; /* Moves this card to the far right */
 }
 
 
