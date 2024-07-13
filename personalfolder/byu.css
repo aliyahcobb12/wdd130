@@ -29,7 +29,7 @@ nav a {
 
   text-align: center;
 
-  color: white;
+  color: #0F084B;
 
 }
 
@@ -50,7 +50,7 @@ main section {
 
 body {
 
-  background-color: #26408B;
+  background-color: #78C0E0;
 
   margin: 0;
 
@@ -191,7 +191,7 @@ footer {
 
 .msg h2, p {
 
-  color: #0F084B;
+  color: black;
 
 }
 
